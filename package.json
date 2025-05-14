@@ -1,0 +1,23 @@
+{
+  "name": "mark-sharp",
+  "version": "1.0.0",
+  "description": "Handy conversion tools for Markdown",
+  "scripts": {
+    "convert-markdown": "node convertMarkdown.js",
+    "lint:md": "markdownlint '**/*.md' --ignore node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kerrance/mark-sharp.git"
+  },
+  "author": "Kerri Sharp",
+  "bugs": {
+    "url": "https://github.com/kerrance/mark-sharp/issues"
+  },
+  "homepage": "https://github.com/kerrance/mark-sharp#readme",
+  "devDependencies": {
+    "markdown-it": "^14.1.0",
+    "markdownlint": "^0.37.4",
+    "markdownlint-cli": "^0.43.0"
+  }
+}
