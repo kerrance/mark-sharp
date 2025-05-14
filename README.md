@@ -1,4 +1,4 @@
-# mark-sharp
+# Mark Sharp
 Handy conversion tools for Markdown
 
 ## Scripts
