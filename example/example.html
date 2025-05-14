@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Boilerplate Example</title>
+  <style>
+:root {
+  --color__green: #007f6e;
+  --color__mid-green: #006a5d;
+  --color__yellow: #f2c311;
+  --color__black: #121110;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  color: var(--color__black);
+  line-height: 1.4;
+  padding: 6vh 9vw;
+  max-width: 64rem;
+}
+
+header,
+section,
+p {
+  margin-bottom: 1rem;
+}
+
+a:link {
+  color: var(--color__green);
+  text-decoration: underline var(--color__green) 0.1rem;
+  text-underline-offset: 0.1rem;
+}
+
+a:visited {
+  color: var(--color__green);
+}
+
+a:hover {
+  color: var(--color__mid-green);
+}
+
+h1,
+h2 {
+  text-decoration: underline var(--color__yellow) 0.2rem;
+  text-underline-offset: 0.2rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+blockquote {
+  border-left: 0.3rem solid var(--color__mid-green);
+  padding: 0.6rem 0.6rem 0.6rem 1.2rem;
+  font-style: italic;
+}
+
+hr {
+  border: 1px solid var(--color__green);
+}
+
+@media print {
+  body {
+    font-size: 14px;
+    color: black;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+}
+
+  </style>
+</head>
+<body>
+<h1>Markdown Boilerplate Example</h1>
+<p>This document demonstrates all standard Markdown syntax with <strong>Lorem Ipsum</strong> placeholder content.</p>
+<hr>
+<h2>Headings</h2>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<hr>
+<h2>Paragraphs &amp; Line Breaks</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Vestibulum in porttitor massa. Maecenas scelerisque.</p>
+<p>New paragraph after a blank line:</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, nisl eget...</p>
+<hr>
+<h2>Emphasis</h2>
+<p><strong>Bold text</strong></p>
+<p><em>Italic text</em></p>
+<p><em><strong>Bold and italic</strong></em></p>
+<p><s>Strikethrough</s></p>
+<hr>
+<h2>Blockquotes</h2>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<blockquote>
+<p>Nested blockquote with <em>emphasis</em>.</p>
+</blockquote>
+</blockquote>
+<hr>
+<h2>Lists</h2>
+<h3>Unordered List</h3>
+<ul>
+<li>Lorem ipsum</li>
+<li>Dolor sit amet
+<ul>
+<li>Consectetur
+<ul>
+<li>Adipiscing elit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Ordered List</h3>
+<ol>
+<li>Lorem ipsum</li>
+<li>Dolor sit amet
+<ol>
+<li>Consectetur</li>
+<li>Adipiscing elit</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2>Code</h2>
+<h3>Inline Code</h3>
+<p>Use the <code>printf()</code> function to print text.</p>
+<h3>Code Block (fenced)</h3>
+<pre><code class="language-markdown">```javascript
+function greet(name) {
+  console.log(&quot;Hello, &quot; + name);
+}
+```
+</code></pre>
+<hr>
+<h2>Horizontal Rule</h2>
+<hr>
+<h2>Links</h2>
+<p><a href="https://openai.com">OpenAI</a></p>
+<p><a href="./README.md">Relative link to README</a></p>
+<hr>
+<h2>Images</h2>
+<p><img src="https://via.placeholder.com/150" alt="Alt text for image" title="Optional Title"></p>
+<hr>
+<h2>Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Occupation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alice</td>
+<td>30</td>
+<td>Engineer</td>
+</tr>
+<tr>
+<td>Bob</td>
+<td>25</td>
+<td>Designer</td>
+</tr>
+<tr>
+<td>Charlie</td>
+<td>35</td>
+<td>Product Manager</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Task Lists (GitHub Flavored Markdown)</h2>
+<ul>
+<li>[x] Write Markdown example</li>
+<li>[ ] Test Markdown converter</li>
+<li>[ ] Celebrate 🎉</li>
+</ul>
+<hr>
+<h2>HTML in Markdown</h2>
+<p>&lt;div style=&quot;color: red;&quot;&gt;This is an inline HTML block.&lt;/div&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;Click to expand!&lt;/summary&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;/details&gt;</p>
+<hr>
+<h2>Footnotes</h2>
+<p>Here is a sentence with a footnote.[^1]</p>
+<p>[^1]: This is the footnote content.</p>
+<hr>
+<h2>Definition Lists</h2>
+<p>Term 1
+: Definition 1</p>
+<p>Term 2
+: Definition 2</p>
+<hr>
+<h2>Escaping Characters</h2>
+<p>*This text is not italicized*</p>
+<p>$100.00 is not interpreted as LaTeX math.</p>
+<hr>
+<h2>Emoji (GitHub Flavored)</h2>
+<p>:rocket: :tada: :+1:</p>
+<hr>
+<h2>Autolinks</h2>
+<p>https://www.example.com</p>
+<p>user@example.com</p>
+<hr>
+<h2>Math (LaTeX - if supported)</h2>
+<p>Inline math: <code>$E=mc^2$</code></p>
+<p>Block math:</p>
+<pre><code class="language-math">\int_{a}^{b} x^2 dx
+</code></pre>
+
+</body>
+</html>
